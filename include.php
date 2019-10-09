@@ -1,23 +1,21 @@
 <?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 $classes = [
-    /*    "travelsoft\\bx24customizer\\EventsHandlers" => "lib/EventsHandlers.php",
-        "travelsoft\\bx24customizer\\Tools" => "lib/Tools.php",
-        "travelsoft\\bx24customizer\\Cache" => "lib/Cache.php",
-        "travelsoft\\bx24customizer\\mastertour\\Gateway" => "lib/mastertour/Gateway.php",
-        "travelsoft\\bx24customizer\\Fields" => "lib/Fields.php",
+    "Tio\\Import\\Gateway\\BusGateway" => "lib/Gateway/BusGateway.php",
+    "Tio\\Import\\Gateway\\BelOrientirGateway" => "lib/Gateway/BelOrientirGateway.php",
+    "Tio\\Import\\Tools" => "lib/Tools.php",
+    "Tio\\Import\\Adapters\\CacheAdapter" => "lib/Adapters/CacheAdapter.php",
+    "Tio\\Import\\Import\\Import" => "lib/Import/Import.php",
+    "Tio\\Import\\Import\\BelOrientirImport" => "lib/Import/BelOrientirImport.php",
+    "Tio\\Import\\Export\\Export" => "lib/Export/Export.php",
+    "Tio\\Import\\Export\\IBlockExport" => "lib/Export/IBlockExport.php",
 
-        "travelsoft\\bx24customizer\\stores\\Country" => "lib/stores/Country.php",
-        "travelsoft\\bx24customizer\\stores\\Resort" => "lib/stores/Resort.php",
-        "travelsoft\\bx24customizer\\stores\\Food" => "lib/stores/Food.php",
-        "travelsoft\\bx24customizer\\stores\\AdvertisingSources" => "lib/stores/AdvertisingSources.php",
-        "travelsoft\\bx24customizer\\stores\\TourType" => "lib/stores/TourType.php",
+    "Tio\\Import\\Adapters\\Block" => "lib/Adapters/Block.php",
+    "Tio\\Import\\Adapters\\HighLoadBlock" => "lib/Adapters/HighLoadBlock.php",
+    "Tio\\Import\\Adapters\\IBlock" => "lib/Adapters/IBlock.php",
 
-        "travelsoft\\bx24customizer\\adapters\\Highloadblock" => "lib/adapters/Highloadblock.php",
-        "travelsoft\\bx24customizer\\adapters\\Iblock" => "lib/adapters/Iblock.php",
-        "travelsoft\\bx24customizer\\adapters\\Store" => "lib/adapters/Store.php",
-
-        "travelsoft\\bx24customizer\\traits\\MasterTourRelatedStores" => "lib/traits/MasterTourRelatedStores.php",*/
+    "Tio\\Import\\Store\\BusTour" => "lib/Store/BusTour.php",
+    "Tio\\Import\\Store\\HLPrice" => "lib/Store/HLPrice.php",
 ];
 
 CModule::AddAutoloadClasses("tio.import", $classes);
